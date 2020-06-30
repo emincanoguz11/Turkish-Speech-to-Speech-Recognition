@@ -71,7 +71,7 @@ def jarvis(data):
         data = data.split(" ")
         location = data[0]
         speak("Bekle {} Birazdan buluyorum ".format(isim) + location)
-        driver = webdriver.Chrome('/home/eco/Masaüstü/Gereksiz/PYTHON_FILES/chromedriver')
+        driver = webdriver.Chrome('/home/eco/Masaüstü/Gereksiz/PYTHON_FILES/chromedriver') #change your chromedriver directory!
         os.system("chromium-browser https://www.google.com/maps/place/" + location + "/&amp;")
         time.sleep(15)
 
@@ -83,7 +83,7 @@ def jarvis(data):
             sarki_ismi = sarki_ismi + i
 
         speak("Bekle {} Birazdan buluyorum. ".format(isim) + sarki_ismi + " yi çalıyorum")
-        driver = webdriver.Chrome('/home/eco/Masaüstü/Gereksiz/PYTHON_FILES/chromedriver')
+        driver = webdriver.Chrome('/home/eco/Masaüstü/Gereksiz/PYTHON_FILES/chromedriver') #change your chromedriver directory!
         driver.get("https://www.youtube.com/results?search_query=" + sarki_ismi)
 
     if "çıkış" in data:
