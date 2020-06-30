@@ -1,5 +1,7 @@
 # turkish-speech-to-speech-recognition
 
+IMPORTANT: I highly recommend to using headphones with microphone. If you using headphones, your experience is highly increased.
+
 I created program with Speech-to-Speech Recognition at Turkish. It's name is Mahmut. (I give this name)
 
 This program is running like Jarvis in Ironman.
@@ -25,6 +27,8 @@ Note: This is basic usage for speech-to-speech techonologies. I am developing to
 7-) PyAudio: https://pypi.org/project/PyAudio/
 
 # Turkish
+
+ÖNEMLİ: En iyi deneyim için mikrofonlu kulaklık kullanmanızı tavsiye ederim. 
 
 Yaptığım program Speech-to-Speech algılamanın Türkçe yapılmış halidir. İsmini Mahmut koydum. (Bir farklılık olsun istedim :) )
 
