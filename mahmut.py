@@ -5,6 +5,7 @@ Created on Wed Aug 21 01:08:45 2019
 
 @author: eco
 """
+#import all libraries
 import speech_recognition as sr
 from gtts import gTTS
 import os
@@ -14,9 +15,10 @@ from selenium import webdriver
 import sys
 from pygame import mixer
 
+#creating a mixer object.
 mixer.init()
 
-
+#translate speech to text, after than load audio.mp3 to giving machine answers.
 def speak(audioString):
     print(audioString)
     tts = gTTS(text=audioString, lang='tr')
@@ -24,13 +26,13 @@ def speak(audioString):
     mixer.music.load("audio.mp3")
     mixer.music.play()
 
-
+#record all sounds to permission a microfone.
 def recordAudio():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Bir şeyler söyle!")
         audio = r.listen(source)
-
+#sounds are taking a data string.
     data = ""
     try:
         data = r.recognize_google(audio, language='tr-tr')
@@ -42,7 +44,7 @@ def recordAudio():
 
     return data
 
-
+#if person say anything in data, must be in this function.
 def jarvis(data):
     if "Selamünaleyküm" in data:
         time.sleep(1)
@@ -93,14 +95,14 @@ def jarvis(data):
 
 
 time.sleep(2)
-
+#take your name and say all documents for your name
 speak("İsminizi söyler misiniz?")
 isim = recordAudio()
 speak("Hoşgeldiniz " + isim)
 
 time.sleep(3)
 
-speak("Kardeşim senin için ne yapayım?")
+speak("Sizin için ne yapabilirim?")
 
 while 1:
     data = recordAudio()
