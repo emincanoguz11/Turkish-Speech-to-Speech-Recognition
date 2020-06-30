@@ -11,11 +11,17 @@ Note: This is basic usage for speech-to-speech techonologies. I am developing to
 # Libraries
 
 1-) Speech Recognotion : https://pypi.org/project/SpeechRecognition/
+
 2-) gTTS : https://pypi.org/project/gTTS/
+
 3-) os
+
 4-) time
+
 5-) selenium : https://pypi.org/project/selenium/
+
 6-) pygame : https://pypi.org/project/pygame/
+
 7-) PyAudio: https://pypi.org/project/PyAudio/
 
 # Turkish
@@ -31,9 +37,15 @@ Not: Bu uygulama basit bir speech-to-speech teknolojisinin kullanımıdır. Bunu
 # Kullandığım Kütuphaneler
 
 1-) Speech Recognotion : https://pypi.org/project/SpeechRecognition/
+
 2-) gTTS : https://pypi.org/project/gTTS/
+
 3-) os
+
 4-) time
+
 5-) selenium : https://pypi.org/project/selenium/
+
 6-) pygame : https://pypi.org/project/pygame/
+
 7-) PyAudio: https://pypi.org/project/PyAudio/
